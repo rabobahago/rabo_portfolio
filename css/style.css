@@ -215,3 +215,30 @@ nav {
 /* .about-me {
   background-color: #f5f5;
 } */
+
+.my-work {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  text-align: center;
+}
+
+.section__subtitle--work {
+  color: var(--clr-accent);
+  font-weight: var(--fw-bold);
+  margin: 2em;
+}
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.portfolio__item {
+  background: var(--clr-accent);
+}
+
+.portfolio__img {
+  transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1) opacity 250ms linear;
+}
+.portfolio__img:hover {
+  transform: scale(1.2);
+  opacity: 0.75;
+}
